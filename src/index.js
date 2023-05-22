@@ -4,6 +4,7 @@ import ReactDom from 'react-dom';
 // import Header from './Components/Header';
 // import Body from "./Components/Body";
 import App from './App';
+import './index.css';
 
 // ReactDom.render(<div><h1>Hello World</h1>
 //                     <h2> React Js is the famous library for web interface </h2>
