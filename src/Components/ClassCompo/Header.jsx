@@ -1,6 +1,5 @@
 import React from "react";
 import bimage from "./Images/b.jpeg";
-import nimage from './Images/n.jpg';
 class Header extends React.Component
 {
     // class members
@@ -21,10 +20,7 @@ class Header extends React.Component
                 <img src={bimage} alt="" />  
                 <hr />
                 <p> Details = {JSON.stringify(this.details)}</p>
-
-                
                 <hr />
-                <img src={nimage} alt="" />
 
             </div>
         );
