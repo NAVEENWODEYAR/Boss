@@ -1,15 +1,17 @@
 
 // import Header from "./Components/ClassCompo/Header";
-import NavBar from "./Components/MadMax/Navbar";
-// import '../node_modules/bootstrap/dist/css/bootstrap.css';              // importing the css using npm i bootstrap@version no
-import './CSS/style.css';                                                   // importing the bootstrap from the local file
+import Navbar from "./Components/MadMax/Navbar"
+import './CSS/style.css';
+import CompA from "./Props/CompA";
 
 function App()
 {
 
     return <div>
-            <h6><center> NavBar</center></h6>
-            <NavBar/>
+            {/* <h1><center> NavBar  </center></h1> */}
+            <Navbar />
+            <CompA/>
+         
     </div>
 }
 export default App

@@ -1,30 +1,17 @@
-
 import React,{Component} from 'react';
 
-class NavBar extends Component
+class Navbar extends Component 
 {
 
     render()
     {
-        return 
-        // return <nav className="navbar navbar-dark  bg-dark">
-        //     <a href="#" className="navbar-brand"> MadMax </a>
-        
-                <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">WebSiteName</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
-                </ul>
-                </div>
+        return(
+            <nav>
+                <div className='navbar navbar-dark bg-dark'>
+                    <a href="http://localhost:3000/" className='navbar-brand'> <strong> .MadMax Events </strong>@mad at photography@ </a>
+                  </div>
             </nav>
-
-        // </nav>
+        )
     }
 }
-export default NavBar;
+export default Navbar;
