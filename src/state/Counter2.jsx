@@ -4,6 +4,8 @@ import React from 'react';
 
 class Counter2 extends React.Component 
 {
+
+    img = "";
     render()
     {
         return(
