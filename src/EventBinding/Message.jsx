@@ -19,6 +19,7 @@ class Message extends Component
         this.setState({
             msg :  value,
         })
+        console.log(this);
     }
     render()
     {
