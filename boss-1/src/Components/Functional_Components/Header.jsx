@@ -16,7 +16,7 @@ const Header = () => {
 			<p>{num} </p>
 			<button onClick={()=> {setNum(num*num)}}> Square </button>
 			<hr/>
-			<h3> {emp},  Array </h3>
+			<h3> {emp}, Array </h3>
 		</>
 		);
 }
