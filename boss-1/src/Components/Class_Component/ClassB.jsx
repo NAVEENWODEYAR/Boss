@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import ClassD from './ClassD';
+import ClassC from './ClassC';
 
 
 class ClassB extends Component
@@ -33,6 +35,10 @@ class ClassB extends Component
 						</tbody>
 					</table>
 			</center>
+			<hr/>
+			<ClassD	  test = {this.props.Details.employee}/>
+			<hr/>
+			<ClassC test = {this.props.Details.employee}/>
 			</>
 			);
 	}
