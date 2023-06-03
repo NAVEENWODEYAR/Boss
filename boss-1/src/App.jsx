@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Components/Class_Component/Navbar';
-import RenderD from './Components/Functional_Component/RenderD';
+import Form2 from './Components/Functional_Component/Form2';
 
 
 const App = (props) => {
@@ -12,7 +12,7 @@ const App = (props) => {
 				<hr/>
 				{/*<Footer  note = {"For state management"}/>*/}
 				<hr/>
-				<RenderD value ={false}/>
+				<Form2 />
 			</div>
 }
 export default App;
