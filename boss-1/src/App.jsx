@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Components/Class_Component/Navbar';
-import Header from './Components/Functional_Components/Header';
-import Footer from './Components/Functional_Components/Footer';
+import Header from './Components/Functional_Component/Header';
+import Footer from './Components/Functional_Component/Footer';
 
 
 const App = (props) => {
