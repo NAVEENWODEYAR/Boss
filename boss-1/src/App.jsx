@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './Components/Class_Component/Navbar';
-import C_LifeCycle from './Components/Class_Component/C_LifeCycle'
-import Event from './Components/Functional_Component/Event';
+import RenderD from './Components/Functional_Component/RenderD';
 
 
 const App = (props) => {
@@ -13,7 +12,7 @@ const App = (props) => {
 				<hr/>
 				{/*<Footer  note = {"For state management"}/>*/}
 				<hr/>
-				<Event />
+				<RenderD value ={false}/>
 			</div>
 }
 export default App;
