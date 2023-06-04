@@ -13,10 +13,10 @@ let App = () => {
         <Router>
             <Navbar/>
             <Routes>
-                <Route path="/home" Component={{Home}}/>
-                <Route path="/about" Component={{About}}/>
-                <Route path="/services" Component={{Services}}/>
-                <Route path="/contact" Component={{Contact}}/>
+                <Route path="/home" Component={Home}/>
+                <Route path="/about" Component={About}/>
+                <Route path="/services" Component={Services}/>
+                <Route path="/contact" Component={Contact}/>
             </Routes>
         </Router>
         </>
