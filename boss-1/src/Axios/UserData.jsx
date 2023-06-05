@@ -1,67 +1,65 @@
-import React,{Component} from 'react';
+import React from 'react';
+
 import Axios from 'axios';
 
-class UserData extends Component
+class UserData extends React.Component
 {
-
 	constructor(props)
 	{
 		super(props);
-		this.state = {users:[]}
+		this.state={test:{}};
 	}
 
-	componentDidMount()
-	{
-		Axios.get('https://dummyjson.com/products/category/smartphones')
-			
-			.then((response)=> {
-			this.setState({users:response.data})
-			})
-
-			.catch(()=> {})
-	}
+		componentDidMount()
+		{
+			Axios.get('https://dummyjson.com/users');
+				.then((resp)=> {
+					this.setState({test:resp.data});
+				})
+				.catch(()=>{})
+		}
 	render()
 	{
 		return(
 			<>
-				<h2> Data from the API </h2>
-				<pre>{JSON.stringify(this.state)}</pre>
+				<p> Test Component for Axios </p>
 				<hr/>
-					<div className="container">
-						<div className="row">
-							<div className="md-col-8">
-								<table className="table table-hover">
-									<thead className="bg-success">
-										<th> ID </th>
-										<th> Name </th>
-										<th> E-mail </th>
-										<th> Salary </th>
-									</thead>
-									<tbody>
-
-									{
-										this.state.users.product.length >0 ?
-											<>
-												{
-													this.state.product.product.map((usr)=> {
-														return 
-														(<tr>
-															<td> {usr.id} </td>																					
-															<td> {usr.name} </td>
-															<td> {usr.emial} </td>
-															<td> {usr.sal} </td>
-															<td> {this.state.users.length} </td>
-														</tr>)
-													})
-												}
-											</>:<h2> No data,{this.state.users.length}, Empty array, please check API </h2>
-									}
-
-									</tbody>
-								</table>
-							</div>
-						</div>
+				<p>{JSON.stringify(thi.state.test)}</p>
+				<hr/>
+				<div className="row">
+					<div className="col-md-10">
+						<table>
+							<thead>
+								<tr>
+									<th> ID </th>
+									<th> Name </th>
+									<th> E-mail</th>
+									<th> Ph Number </th>
+									<th> Image </th>
+								</tr>
+							</thead>
+							<tbody>
+								{
+									Object.keys(this.state.test).length > 0 ?
+									<>
+										{
+											this.state.test.map((t,index)=>{
+												return 
+													<tr keys={index}>
+														<td>{t.id} </td>
+														<td> {t.name} </td>
+														<td>{t.email} </td>
+														<td> {t.pnone}</td>
+														<td> {t.image} </td>
+													</tr>
+											})
+										}
+									</> : <h1> Check your API </h1>
+								}
+							</tbody>
+						</table>
 					</div>
+				</div>
 			</>);
 	}
 }
