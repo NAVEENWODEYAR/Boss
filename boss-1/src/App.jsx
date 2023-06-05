@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Components/Class_Component/Navbar';
-import UseState from './Hooks/UseState';
+import UseState1 from './Hooks/UseState1';
 
 const App = (props) => {
 
@@ -11,7 +11,7 @@ const App = (props) => {
 				<hr/>
 				{/*<Footer  note = {"For state management"}/>*/}
 				<hr/>
-				<UseState />
+				<UseState1 />
 			</div>
 }
 export default App;

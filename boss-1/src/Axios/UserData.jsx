@@ -40,10 +40,10 @@ class UserData extends Component
 									<tbody>
 
 									{
-										this.state.users.length >0 ?
+										this.state.users.product.length >0 ?
 											<>
 												{
-													this.state.users.users.map((usr)=> {
+													this.state.product.product.map((usr)=> {
 														return 
 														(<tr>
 															<td> {usr.id} </td>																					
