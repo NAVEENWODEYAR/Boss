@@ -36,19 +36,17 @@ class Users extends Component {
                                     Object.keys(this.state.user).length > 0 ?
                                         <>
                                             {
-                                                this.state.user.users.map((user, index) => {
+                                                this.state.user.users.map((u, index) => {
                                                     return <tr key={index}>
-                                                        <td>{user.id}</td>
-                                                        <td>{user.maidenName}</td>
-                                                        <td>{user.age}</td>
-                                                        <td> {user.email} </td>
-                                                        <td><img src={user.image} height={'40px'} /></td>
+                                                        <td>{u.id}</td>
+                                                        <td>{u.maidenName}</td>
+                                                        <td>{u.age}</td>
+                                                        <td> {u.email} </td>
+                                                        <td><img src={u.image} height={'40px'} /></td>
                                                     </tr>
                                                 })
                                             }
-                                        </> : <h3>
-                                            No Data
-                                        </h3>
+                                        </> : <h3> No Data </h3>
                                 }
                             </tbody>
                         </table>
