@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Axios from 'axios';
 
 class UserData extends React.Component
@@ -7,14 +6,14 @@ class UserData extends React.Component
 	constructor(props)
 	{
 		super(props);
-		this.state={test:{}};
+		this.state={user:{}};
 	}
 
 		componentDidMount()
 		{
-			Axios.get('https://dummyjson.com/users');
-				.then((resp)=> {
-					this.setState({test:resp.data});
+			Axios.get('https://dummyjson.com/users')
+				.then((resp) => {
+					this.setState({user:resp.data})
 				})
 				.catch(()=>{})
 		}
@@ -24,11 +23,11 @@ class UserData extends React.Component
 			<>
 				<p> Test Component for Axios </p>
 				<hr/>
-				<p>{JSON.stringify(thi.state.test)}</p>
+				{/* <p>{JSON.stringify(this.state.user)}</p> */}
 				<hr/>
 				<div className="row">
 					<div className="col-md-10">
-						<table>
+						<table className='table table-hover'>
 							<thead>
 								<tr>
 									<th> ID </th>
@@ -40,18 +39,19 @@ class UserData extends React.Component
 							</thead>
 							<tbody>
 								{
-									Object.keys(this.state.test).length > 0 ?
+									Object.keys(this.state.user).length > 0 ?
 									<>
 										{
-											this.state.test.map((t,index)=>{
-												return 
+											this.state.user.users.map((user,index)=>{
+												return <>
 													<tr keys={index}>
-														<td>{t.id} </td>
-														<td> {t.name} </td>
-														<td>{t.email} </td>
-														<td> {t.pnone}</td>
-														<td> {t.image} </td>
+														<td>{user.id} </td>
+														<td> {user.firstName} </td>
+														<td>{user.email} </td>
+														<td> {user.phone}</td>
+														<td> <img src={user.image} height={"50px"}/> </td>
 													</tr>
+													</>
 											})
 										}
 									</> : <h1> Check your API </h1>
