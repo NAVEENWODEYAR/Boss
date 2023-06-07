@@ -1,5 +1,5 @@
 import React from 'react'
-import UserData2 from './UserData2'
+import Test from './Test'
 
 let App = () => {
 
@@ -7,7 +7,7 @@ let App = () => {
 		<>
 			<p> Axios is used for data processing using the API </p>
 			<hr/>
-			<UserData2 />
+			<Test />
 		</>);
 }
 export default App;
