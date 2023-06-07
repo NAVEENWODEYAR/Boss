@@ -1,5 +1,5 @@
 import React from "react";
-import Reference2 from "./Reference2";
+import Test from './Test';
 
 let Appa = () => {
 
@@ -7,7 +7,7 @@ let Appa = () => {
         <>
             <h2 style={{color:"green",fontSize:"20rem"}}> App.jsx </h2>
             <hr />
-            <Reference2 />
+            <Test />
         </>
     );
 }
