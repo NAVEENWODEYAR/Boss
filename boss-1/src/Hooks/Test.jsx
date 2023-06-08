@@ -18,11 +18,11 @@ let Test = () => {
                 <div className="row">
                     <div className="col-md-12">
                         <table className='table table-hover'>
-                            <thead className='bg-dark text-white' >
+                            <thead className='bg-danger text-white' >
                                 <tr>
                                     <th> ID </th>
                                     <th> UsrId </th>
-                                    <th> Title </th>
+                                    <th> Name </th>
                                     <th> Body </th>
                                 </tr>
                             </thead>
