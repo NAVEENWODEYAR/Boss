@@ -7,7 +7,7 @@ class Contact extends Component
 
         return(
             <>
-                <h2 style={{fontSize:"5rem",color:"green"}}> We are available always.., </h2>
+                <h2 style={{fontSize:"5rem",color:"green"}}> We are available always..,for our patrons.., </h2>
             </>
         );
     }

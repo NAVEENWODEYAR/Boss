@@ -15,7 +15,7 @@ class Services extends Component
         };
         return(
             <>
-                <h2 style={styl}>   All kinds of photography.., </h2>
+                <h2 style={styl}>   All kinds of complete photography.., </h2>
             </>
         );
     }

@@ -7,7 +7,7 @@ class Home extends Component
 
         return(
             <>
-                <h2 style={{fontSize:"5rem",color:"orange",backgroundColor:"blueviolet"}}> Our patrons happiness is our income.., </h2>
+                <h2 style={{fontSize:"5rem",color:"orange",backgroundColor:"blueviolet"}}> Our Patrons happiness is our income.., </h2>
             </>
         );
     }

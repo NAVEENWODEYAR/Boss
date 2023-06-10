@@ -7,7 +7,7 @@ class About extends Component
 
         return(
             <>
-                <h2 style={{fontSize:"5rem",color:"blue"}}> We are Mad at photography </h2>
+                <h2 style={{fontSize:"5rem",color:"blue"}}> We are mad at photography </h2>
             </>
         );
     }
