@@ -16,6 +16,13 @@ class Services extends Component
         return(
             <>
                 <h2 style={styl}>   All kinds of complete photography.., </h2>
+                <hr />
+                <select name="" id="">
+                    <option value=""> Wedding Events </option>
+                    <option value=""> Pre-Wedding Events </option>
+                    <option value=""> BirthDay Events </option>
+                    <option value=""> Promotional Events </option>
+                </select>
             </>
         );
     }

@@ -5,7 +5,7 @@ let Navbar1 = () =>{
     return(
         <>
             <nav className='navbar navbar-primary bg-dark'>
-                <a href="" className='navbar-brand'> Boss </a>
+                <a href="" className='navbar-brand'> @Boss </a>
                 <div className='ml-auto'>
                     <ul className='navbar-nav'>
                         <li className='nav-list'><a href="" className='nav-link'> Home </a></li>
