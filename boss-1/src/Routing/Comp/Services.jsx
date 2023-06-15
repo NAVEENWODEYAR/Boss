@@ -4,7 +4,7 @@ const Services = () => {
 
     return(
         <>
-            <h1 style={{fontSize:"10rem"}}> Our Services </h1>
+            <h1 style={{fontSize:"10rem"}}> Our Services.., </h1>
         </>
     );
 }

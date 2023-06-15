@@ -4,7 +4,7 @@ const Contact = () => {
 
     return(
         <>
-            <h1 style={{fontSize:"10rem"}}> Contact Page </h1>
+            <h1 style={{fontSize:"10rem"}}> Contact Page.., </h1>
         </>
     );
 }
