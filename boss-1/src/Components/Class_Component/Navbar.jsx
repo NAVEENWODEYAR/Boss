@@ -7,7 +7,7 @@ class Navbar extends Component
         return(
             <>
                 <nav className='navbar navbar-dark bg-dark navbar-expand-lg'>
-                    <a href="#" className='navbar-brand'> MadMax </a>
+                    <a href="#" className='navbar-brand'> MadMax Events </a>
                         <div className='ml-auto'>
                             <ul className='navbar-nav'>
                                 <li className='nav-list'> <a className='nav-link'> Home </a></li>
