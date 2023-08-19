@@ -1,4 +1,4 @@
-// Component LifeCycle methods
+// Component LifeCycle methods mounting, updating and unmounting
 
 import React,{Component} from 'react'
 
