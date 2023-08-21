@@ -1,12 +1,12 @@
 class Test
 {
-    static cName = 'Boss';
+     cName = 'Boss';
     getMsg()
         {
             console.log(this.cName);
         }
-
-        getMsg();
 }
- let a = new Test();
-    a.getMsg();
+var a = new Test();
+console.log(a);
+console.log(a.getMsg);
+console.log(a.getMsg());
