@@ -1,10 +1,11 @@
 class Test
 {
      cName = 'Boss';
-     cId;
+     cId = 1;
     getMsg()
         {
-            // t
+            console.log(this.cName);
+            console.log(this.cId);
         }
 }
 var a = new Test();
