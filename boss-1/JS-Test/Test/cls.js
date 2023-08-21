@@ -4,11 +4,10 @@ class Test
      cId;
     getMsg()
         {
-            console.log(this.cName);
-            console.log(this.cId);
+            // t
         }
 }
 var a = new Test();
-console.log(a);
-console.log(a.getMsg);
-// console.log(a.getMsg());
+// console.log(a);
+// console.log(a.getMsg);
+console.log(a.getMsg());
